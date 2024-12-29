@@ -2,8 +2,10 @@ from typing import Annotated
 from fastapi.security import OAuth2PasswordRequestForm
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from .. import models, schemas, database
-from ..repository import hashing, JWTtoken
+import models
+import schemas
+import database
+from repository import hashing, JWTtoken
 from datetime import timedelta, datetime
 router = APIRouter()
 

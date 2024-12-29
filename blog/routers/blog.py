@@ -1,8 +1,10 @@
 from fastapi import APIRouter, Depends, status, Response, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
-from .. import models, database, schemas
-from ..repository import JWTtoken
+import models
+import database
+import schemas
+from repository import JWTtoken
 
 router = APIRouter(
     # tags=['Users']

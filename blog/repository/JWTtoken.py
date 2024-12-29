@@ -6,7 +6,9 @@ from datetime import datetime, timedelta, timezone
 from fastapi import HTTPException, Depends, status
 from typing import Annotated
 from pydantic import BaseModel
-from .. import database, schemas, models
+import database
+import schemas
+import models
 from sqlalchemy.orm import Session
 # to get a string like this run:
 # openssl rand -hex 32
